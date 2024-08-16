@@ -1,38 +1,99 @@
+/* src/App.css */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
+  position: relative;
+  z-index: 1;
+}
+
+.App-main {
+  flex: 1;
+  margin-top: 60px; /* Add margin-top to account for the fixed navbar height */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* App.css */
+.section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
 }
 
-.App-link {
+#home {
+  background-color: #f1f1f1;
+}
+
+#about {
+  background-color: #e2e2e2;
+}
+
+#services {
+  background-color: #d3d3d3;
+}
+
+#contact {
+  background-color: #c4c4c4;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
   color: #61dafb;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-footer {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  bottom: 0;
 }

@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/navbar";
+import Home from "./components/home";
+import About from "./components/about";
+import Skills from "./components/skills";
+import Contact from "./components/contact";
+import Footer from "./components/footer"; // Import the Footer component
+import Trails from "./components/Trails"; // Import the Trails component
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar />
       </header>
+      <main>
+        <Section id="home" title="Home" />
+        <Section id="about" title="About" />
+        <Section id="skills" title="Skills" />
+        <Section id="contact" title="Contact" />
+      </main>
+      <Footer /> {/* Add the Footer component */}
     </div>
   );
 }
+
+const Section = ({ id, title }) => {
+  return (
+    <div id={id} className="section">
+      <h1>{title}</h1>
+      <p>This is the {title} section.</p>
+    </div>
+  );
+};
 
 export default App;
