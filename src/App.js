@@ -1,12 +1,11 @@
 import React from "react";
-import "./App.css";
+import "./components/css/App.css";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
 import About from "./components/about";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
 import Footer from "./components/footer"; // Import the Footer component
-import Trails from "./components/Trails"; // Import the Trails component
 
 function App() {
   return (
