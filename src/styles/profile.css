@@ -1,0 +1,46 @@
+.profile-image img {
+  width: 90px; /* Use viewport width for image size */
+  height: 90px; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc; /* Converted from 0.2vw */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items to the center */
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: left;
+  font-size: 0.8rem; /* Shrink the text size */
+  padding-left: 20px;
+}
+
+.profile-info p {
+  margin: 0; /* Remove the default margin */
+  line-height: 1.4; /* Adjust the line-height to control vertical spacing */
+}
+
+.profile-info a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.profile-text {
+  flex: 1;
+  font-size: 15px; /* Use rem for font size */
+  text-align: left;
+}

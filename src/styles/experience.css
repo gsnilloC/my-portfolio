@@ -1,0 +1,24 @@
+.company-logo {
+  flex: 0 0 auto; /* Prevent the logo from stretching */
+  margin-right: 20px; /* Add some space between the logo and the text */
+}
+
+.company-logo img {
+  width: 45px; /* Reduce the width */
+  height: 45px; /* Reduce the height */
+}
+
+.experience-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-top: 25px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column; /* Change to row to align items side by side */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: flex-start; /* Align items to the top */
+}
