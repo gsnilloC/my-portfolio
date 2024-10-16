@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .App-header {
@@ -13,7 +14,8 @@
 
 .App-main {
   flex: 1;
-  margin-top: 60px; /* Add margin-top to account for the fixed navbar height */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .navbar {
@@ -26,52 +28,13 @@
 
 /* App.css */
 .section {
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.section {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  border-bottom: 1px solid #ccc;
-}
-
-#home {
-  background-color: #f1f1f1;
-}
-
-#about {
-  background-color: #e2e2e2;
-}
-
-#services {
-  background-color: #d3d3d3;
-}
-
-#contact {
-  background-color: #c4c4c4;
+  font-size: 20px;
+  scroll-snap-align: start;
+  background: none; /* Remove section-specific background */
 }
 
 nav ul {
@@ -86,14 +49,155 @@ nav ul li {
 }
 
 nav ul li a {
+  color: var(--color-green500);
+}
+
+.navigation-arrows {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.navigation-arrows svg {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #333;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 20px; /* Adjust this value to overlap with the first section */
+  right: 20px; /* Align to the right */
+  z-index: 1100; /* Ensure it's above other elements */
+  cursor: pointer;
   color: #61dafb;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10vw; /* Converted from 10vw */
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items to the center */
+  width: 100%;
+  padding-left: 50px;
+}
+
+.profile-image {
+  flex: 0 0 auto;
+  text-align: left;
+  margin-right: 10px; /* Converted from 1vw */
+}
+
+.profile-image img {
+  width: 90px; /* Use viewport width for image size */
+  height: 90px; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc; /* Converted from 0.2vw */
+}
+
+.profile-info {
+  flex: 1;
+  text-align: left;
+  font-size: 0.8rem; /* Shrink the text size */
+  padding: 0;
+  padding-left: 20px; /* Converted from 2vw */
+}
+
+.profile-info p {
+  margin: 0; /* Remove the default margin */
+  line-height: 1.4; /* Adjust the line-height to control vertical spacing */
+}
+
+.profile-info p:first-child {
+  font-size: 20px; /* Adjust the size as needed */
+  font-weight: 600;
+}
+
+.profile-info a {
+  color: var(--color-text-primary);
   text-decoration: none;
 }
 
-.App-footer {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
+.profile-text {
+  flex: 1;
+  padding-left: 20px; /* Converted from 2vw */
+  font-size: 15px; /* Use rem for font size */
+  text-align: left;
+}
+
+.profile-text p {
+  text-transform: lowercase !important;
+}
+
+.experience-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 100px; /* Converted from 10vw */
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row; /* Change to row to align items side by side */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: flex-start; /* Align items to the top */
   width: 100%;
-  bottom: 0;
+  max-width: 800px;
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.company-logo {
+  flex: 0 0 auto; /* Prevent the logo from stretching */
+  margin-right: 20px; /* Add some space between the logo and the text */
+}
+
+.company-logo img {
+  width: 45px; /* Reduce the width */
+  height: 45px; /* Reduce the height */
+}
+
+.experience-details {
+  flex: 1; /* Allow the details to take up remaining space */
+  margin-right: 20px; /* Add some space between the details and the time period */
+}
+
+.time-period {
+  flex: 0 0 auto; /* Prevent the time period from stretching */
+  align-self: flex-start; /* Align the time period to the top */
+}
+
+.job-title {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.job-description {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.position {
+  margin-bottom: 20px;
+}
+
+.experience-heading {
+  flex: 1;
+  font-size: 15px; /* Use rem for font size */
+  text-align: left;
+  padding-left: 100px; /* Converted from 10vw */
 }

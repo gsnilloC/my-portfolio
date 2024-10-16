@@ -1,36 +1,66 @@
 import React from "react";
 import "./components/css/App.css";
 import Navbar from "./components/navbar";
-import Home from "./components/home";
-import About from "./components/about";
+import AboutMe from "./components/about";
+import Education from "./components/education";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
-import Footer from "./components/footer"; // Import the Footer component
+import Footer from "./components/footer";
+import Experience from "./components/experience";
+import Projects from "./components/projects"; // Import the Projects component
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 function App() {
+  const scrollToSection = (direction) => {
+    const sections = document.querySelectorAll(".section");
+    const currentScroll = window.scrollY;
+    let targetSection;
+
+    if (direction === "up") {
+      for (let i = sections.length - 1; i >= 0; i--) {
+        if (sections[i].offsetTop < currentScroll) {
+          targetSection = sections[i];
+          break;
+        }
+      }
+    } else {
+      for (let i = 0; i < sections.length; i++) {
+        if (sections[i].offsetTop > currentScroll) {
+          targetSection = sections[i];
+          break;
+        }
+      }
+    }
+
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
       </header>
-      <main>
-        <Section id="home" title="Home" />
-        <Section id="about" title="About" />
-        <Section id="skills" title="Skills" />
-        <Section id="contact" title="Contact" />
+      <main className="App-main">
+        <AboutMe />
+        <Experience />
+        <Education />
+        <Projects /> {/* Add the Projects component here */}
+        <Skills />
+        <Contact />
       </main>
-      <Footer /> {/* Add the Footer component */}
+      <Footer />
+      <div className="navigation-arrows">
+        <ArrowUpwardIcon onClick={() => scrollToSection("up")} />
+        <ArrowDownwardIcon onClick={() => scrollToSection("down")} />
+      </div>
     </div>
   );
 }
-
-const Section = ({ id, title }) => {
-  return (
-    <div id={id} className="section">
-      <h1>{title}</h1>
-      <p>This is the {title} section.</p>
-    </div>
-  );
-};
 
 export default App;
