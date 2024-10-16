@@ -46,15 +46,17 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
-      <main className="App-main">
-        <AboutMe />
-        <Experience />
-        <Education />
-        <Projects /> {/* Add the Projects component here */}
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
+      <div className="content-container">
+        <main className="App-main">
+          <AboutMe />
+          <Experience />
+          <Education />
+          <Projects />
+          <Skills />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
       <div className="navigation-arrows">
         <ArrowUpwardIcon onClick={() => scrollToSection("up")} />
         <ArrowDownwardIcon onClick={() => scrollToSection("down")} />
