@@ -7,8 +7,6 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Experience from "./components/experience";
 import Projects from "./components/projects"; // Import the Projects component
-import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 function App() {
   return (
