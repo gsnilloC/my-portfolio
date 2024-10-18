@@ -90,3 +90,9 @@
   padding-left: 105px; /* Custom padding for Self-Driving Mini Car */
   margin-top: 15px;
 }
+
+@media (max-width: 768px) {
+  .project-time-period {
+    display: none;
+  }
+}
