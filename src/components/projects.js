@@ -86,7 +86,7 @@ function Projects() {
             link="https://github.com/gsnilloC/x_compiler"
             timePeriod="Jan 2023 - April 2023"
             description="I created my own programming language called X and developed the entire compilation process, including the Lexer, Parser, and Constrainer, to tokenize, parse, and enforce typing rules. Using visitor patterns for AST visualization and memory management, along with optimized data structures like HashMaps, EnumSets, and stacks, I ensured the language compiles efficiently from source code to executable form."
-            techLogos={[{ icon: <FaPython size={20} />, name: "Python" }]}
+            techLogos={[{ icon: <FaJava size={20} />, name: "Java" }]}
             timePeriodClass="code-period"
           />
         </div>
