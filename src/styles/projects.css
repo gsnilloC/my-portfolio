@@ -85,3 +85,8 @@
 .ttt-period {
   padding-left: 185px;
 }
+
+.code-period {
+  padding-left: 105px; /* Custom padding for Self-Driving Mini Car */
+  margin-top: 15px;
+}

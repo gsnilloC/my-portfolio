@@ -20,6 +20,7 @@ function AboutMe() {
               href="https://linkedin.com/in/collinsgichohi"
               target="_blank"
               rel="noopener noreferrer"
+              data-name="LinkedIn"
             >
               <LinkedIn fontSize="small" />
             </a>
@@ -27,6 +28,7 @@ function AboutMe() {
               href="https://github.com/gsnilloC"
               target="_blank"
               rel="noopener noreferrer"
+              data-name="GitHub"
             >
               <GitHub fontSize="small" />
             </a>

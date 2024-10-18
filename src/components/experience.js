@@ -33,9 +33,9 @@ function Experience() {
           <div className="job-description">
             <p>
               Collaborated in an Agile environment to develop an Insurance Rater
-              for calculating driver premiums. I built RESTful APIs for seamless
-              data exchange, optimized AWS Lambda functions, designed test cases
-              with Selenium, and gained experience with MongoDB integration.
+              for calculating driver premiums. I built RESTful APIs, optimized
+              AWS Lambda functions, designed test cases with Selenium, and
+              gained experience with MongoDB integration within an application.
             </p>
             <div className="tech-logos">
               <div className="tech-logo-container" data-name="React.js">

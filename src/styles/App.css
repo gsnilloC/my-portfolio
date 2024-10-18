@@ -1,7 +1,7 @@
 .content-container {
   width: 470px;
   margin: 0 auto; /* Centers the container */
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 @media (max-width: 768px) {

@@ -115,7 +115,7 @@
 .tech-logo-container::after {
   content: attr(data-name); /* Display the name of the technology */
   position: absolute;
-  background-color: rgb(159, 145, 145);
+  background-color: rgb(164, 164, 164);
   color: black;
   padding: 5px;
   border-radius: 5px;
