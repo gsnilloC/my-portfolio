@@ -17,6 +17,7 @@
   flex-direction: column; /* Change to row to align items side by side */
   justify-content: space-between; /* Distribute space between items */
   align-items: flex-start; /* Align items to the top */
+  width: 100%;
 }
 
 .school-time-period {

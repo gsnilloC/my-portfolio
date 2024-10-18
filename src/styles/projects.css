@@ -4,13 +4,15 @@
   margin-right: 20px; /* Add some space between the logo and the text */
 }
 
+.project-section {
+  margin-top: 20px;
+}
+
 .project-container {
   display: flex;
   flex-direction: column; /* Change to row to align items side by side */
   justify-content: space-between; /* Distribute space between items */
   align-items: flex-start; /* Align items to the top */
-  padding-top: 10px;
-  gap: 10px;
 }
 
 .project-time-period {
@@ -25,6 +27,7 @@
 .project-details {
   display: flex;
   align-items: center; /* Align the logo, title, and time period horizontally */
+  padding-top: 10px;
 }
 
 .title {
@@ -72,5 +75,13 @@
 
 /* Specific styling for the drops time period */
 .drops-time-period {
-  margin-left: 50px;
+  margin-left: 55px;
+}
+
+.car-period {
+  padding-left: 162px;
+}
+
+.ttt-period {
+  padding-left: 185px;
 }

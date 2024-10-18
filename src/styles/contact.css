@@ -1,0 +1,25 @@
+.contact-section h2 {
+  font-size: 0.9rem; /* Match the font size of other h2 elements */
+}
+
+.contact-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-links li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: rgb(164, 164, 164);
+}
+
+.contact-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+

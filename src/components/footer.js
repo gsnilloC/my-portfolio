@@ -1,9 +1,10 @@
 import React from "react";
+import "../styles/footer.css";
 
 const Footer = () => {
   return (
-    <footer className="App-footer">
-      <p> Made with ❤️ by Collins Gichohi</p>
+    <footer className="app-footer">
+      <p> Made with ❤️ by Collins Gichohi </p>
     </footer>
   );
 };

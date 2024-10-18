@@ -53,7 +53,7 @@ function Projects() {
             title="Robot Car"
             link="https://cyorugs.vercel.app/"
             timePeriod="January 2024 - May 2024"
-            description="Collaborated with a team of 4 to design and implement a self-driving car using C on a Raspberry Pi, integrating ultrasonic and infrared sensors for navigation."
+            description="Collaborated with a team of 4 to design and implement a self-driving toy car using C on a Raspberry Pi, integrating ultrasonic and infrared sensors for navigation."
             techLogos={[
               { icon: <SiC size={20} />, name: "C" }, // Add C logo
               { icon: <SiLinux size={20} />, name: "Linux" }, // Add Linux logo
@@ -68,6 +68,7 @@ function Projects() {
                 name: "Raspberry Pi",
               },
             ]}
+            timePeriodClass="car-period"
           />
           <ProjectDetail
             logo={tttLogo}
@@ -76,6 +77,7 @@ function Projects() {
             timePeriod="November 2023"
             description="Tic-Tac-Toe game using the Minimax algorithm to create an AI opponent that optimally evaluates each potential board state recursively."
             techLogos={[{ icon: <FaPython size={30} />, name: "Python" }]}
+            timePeriodClass="ttt-period"
           />
         </div>
       </section>
@@ -103,7 +105,7 @@ function ProjectDetail({
             <a href={link} target="_blank" rel="noopener noreferrer">
               {title}
               <ArrowOutwardIcon
-                fontSize="medium"
+                fontSize="small"
                 style={{ verticalAlign: "middle" }}
               />
             </a>

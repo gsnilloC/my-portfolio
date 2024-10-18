@@ -24,7 +24,7 @@ function Experience() {
               <img src={omnidyaLogo} alt="Company Logo" />
             </div>
             <div className="job-title-description">
-              <strong>Software Engineer Intern - Omnidya</strong>
+              <p>Software Engineer Intern - Omnidya</p>
               <div className="time-period">
                 <p>Mar - Aug 2024</p>
               </div>
