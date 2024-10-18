@@ -9,7 +9,7 @@
   justify-content: lef;
   align-items: center;
   text-align: left;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .education-container {
@@ -19,21 +19,16 @@
   align-items: flex-start; /* Align items to the top */
 }
 
-.job-title-description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Align items in the center vertically */
-}
-
 .school-time-period {
-  padding-left: 90px; /* Add space between the job description and time period */
+  padding-left: 120px; /* Add space between the job description and time period */
   white-space: nowrap; /* Prevent the time period from wrapping */
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: right;
   align-items: flex-end;
+  color: rgb(164, 164, 164);
 }
 
-.experience-details {
+.education-details {
   display: flex;
   align-items: center; /* Align the logo, title, and time period horizontally */
 }
@@ -46,7 +41,9 @@
 }
 
 .degree {
-  margin-top: 10px; /* Add space between the title and description */
+  list-style-type: "- "; /* Change bullet points to dashes */
+  margin-top: -10px; /* Add space between the title and description */
   font-size: 0.9rem;
   color: rgb(164, 164, 164);
+  margin-left: 60px;
 }

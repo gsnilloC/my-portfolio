@@ -24,14 +24,6 @@
   box-sizing: border-box; /* Include padding in width calculations */
 }
 
-.job-title-description,
-.experience-details,
-.job-description {
-  width: 100%; /* Make sure child elements take full width */
-  flex-grow: 1; /* Allow the element to grow */
-  flex-shrink: 1; /* Allow the element to shrink */
-}
-
 .job-description p {
   word-wrap: break-word; /* Ensure long text wraps */
 }
@@ -39,24 +31,25 @@
 @media (max-width: 768px) {
   .experience-container {
     width: 100%; /* Full width for smaller screens */
-    padding: 10px; /* Reduce padding for mobile */
+    padding: 0px; /* Reduce padding for mobile */
   }
   .experience-details,
   .job-title-description {
-    flex-direction: column; /* Stack vertically on small screens */
+    flex-direction: row; /* Stack vertically on small screens */
     align-items: flex-start; /* Align to the start */
   }
 }
 
 .time-period {
-  margin-left: 80px; /* Add space between the job description and time period */
   white-space: nowrap; /* Prevent the time period from wrapping */
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  color: rgb(164, 164, 164);
+  margin-left: 60px;
 }
 
 .experience-details {
   display: flex;
-  flex-direction: column; /* Change to column for wrapping */
+  flex-direction: row; /* Change to column for wrapping */
   align-items: flex-start;
   width: 100%; /* Ensure it takes full width */
 }
@@ -66,12 +59,19 @@
   flex-direction: row; /* Ensure job title and time period are side by side */
   align-items: center;
   font-size: 0.9rem;
+  width: 100%; /* Make sure child elements take full width */
+  flex-grow: 1; /* Allow the element to grow */
+  flex-shrink: 1; /* Allow the element to shrink */
+  justify-content: space-between; /* Push the time period to the left */
 }
 
 .job-description {
   margin-top: 10px; /* Add space between the title and description */
   font-size: 0.9rem;
   color: rgb(164, 164, 164);
+  width: 100%; /* Make sure child elements take full width */
+  flex-grow: 1; /* Allow the element to grow */
+  flex-shrink: 1; /* Allow the element to shrink */
 }
 
 .experience-text h2 {

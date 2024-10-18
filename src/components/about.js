@@ -11,7 +11,9 @@ function AboutMe() {
           <img src={profileImage} alt="Profile" />
         </div>
         <div className="profile-info">
-          <p className="profile-name">Collins Gichohi</p>
+          <p className="profile-name">
+            <span className="typing-effect">Collins Gichohi</span>
+          </p>
           <p className="profile-title">Software Engineer</p>
           <p className="links">
             <a

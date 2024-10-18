@@ -36,7 +36,7 @@
 }
 
 .profile-info a {
-  color: lightgrey;
+  color: rgb(164, 164, 164);
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@
 
 .profile-title {
   font-size: 0.9rem;
-  color: grey;
+  color: rgb(164, 164, 164);
 }
 
 .profile-text {
@@ -68,4 +68,31 @@
   display: flex;
   gap: 5px;
   padding-top: 5px;
+}
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  margin-bottom: -5px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }

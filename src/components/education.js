@@ -10,19 +10,20 @@ function Education() {
           <div className="experience-text">
             <h2>Education</h2>
           </div>
-          <div className="experience-details">
+          <div className="education-details">
             <div className="school-logo">
               <img src={sfLogo} alt="School Logo" />
             </div>
             <div className="school">
               <p>San Francisco State University</p>
               <div className="school-time-period">
-                <p>Mar - Aug 2024</p>
+                <p>Spring 2024</p>
               </div>
             </div>
           </div>
           <div className="degree">
-            <p>Bachelor of Science in Computer Science</p>
+            <li>Bachelor's of Science in Computer Science</li>
+            <li>Graduated with Honors</li>
           </div>
         </div>
       </section>

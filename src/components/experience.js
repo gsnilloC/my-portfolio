@@ -39,25 +39,25 @@ function Experience() {
             </p>
             <div className="tech-logos">
               <div className="tech-logo-container" data-name="React.js">
-                <FaReact size={30} />
+                <FaReact size={20} />
               </div>
               <div className="tech-logo-container" data-name="Node.js">
-                <FaNodeJs size={30} />
+                <FaNodeJs size={20} />
               </div>
               <div className="tech-logo-container" data-name="AWS">
-                <FaAws size={30} />
+                <FaAws size={20} />
               </div>
               <div className="tech-logo-container" data-name="Docker">
-                <FaDocker size={30} />
+                <FaDocker size={20} />
               </div>
               <div className="tech-logo-container" data-name="Jira">
-                <FaJira size={30} />
+                <FaJira size={20} />
               </div>
               <div className="tech-logo-container" data-name="MongoDB">
-                <SiMongodb size={30} />
+                <SiMongodb size={20} />
               </div>
               <div className="tech-logo-container" data-name="Java">
-                <FaJava size={30} /> {/* Use FaJava or another alternative */}
+                <FaJava size={20} /> {/* Use FaJava or another alternative */}
               </div>
             </div>
           </div>

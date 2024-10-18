@@ -1,0 +1,76 @@
+.school-logo img {
+  width: 40px; /* Reduce the width */
+  height: 40px; /* Reduce the height */
+  margin-right: 20px; /* Add some space between the logo and the text */
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column; /* Change to row to align items side by side */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: flex-start; /* Align items to the top */
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.project-time-period {
+  padding-left: 150px; /* Add space between the job description and time period */
+  white-space: nowrap; /* Prevent the time period from wrapping */
+  font-size: 0.8rem;
+  text-align: right;
+  align-items: flex-end;
+  color: rgb(164, 164, 164);
+}
+
+.project-details {
+  display: flex;
+  align-items: center; /* Align the logo, title, and time period horizontally */
+}
+
+.title {
+  display: flex;
+  flex-direction: row; /* Ensure job title and time period are side by side */
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.title a {
+  text-decoration: none;
+  color: white;
+}
+
+.title a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.description {
+  margin-top: -10px; /* Add space between the title and description */
+  font-size: 0.9rem;
+  color: rgb(164, 164, 164);
+}
+
+.project-logos {
+  display: flex;
+  flex-wrap: wrap; /* Allow the logos to wrap to the next line */
+  gap: 30px; /* Reduce the gap slightly for smaller screens */
+  justify-content: flex-start; /* Align logos to the left */
+  margin-top: -20px; /* Move the logos upwards slightly */
+  color: rgb(164, 164, 164); /* Set the color of the logos */
+}
+
+.project-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.project-logo.car-logo img {
+  width: 80px; /* Make the car logo larger */
+  height: 60px;
+  margin-left: -5px;
+}
+
+/* Specific styling for the drops time period */
+.drops-time-period {
+  margin-left: 50px;
+}
