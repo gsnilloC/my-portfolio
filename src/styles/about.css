@@ -3,7 +3,7 @@
   height: 90px; /* Maintain aspect ratio */
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #ccc; /* Converted from 0.2vw */
+  margin-left: -10px;
 }
 
 .profile {
@@ -26,21 +26,46 @@
   flex: 1;
   text-align: left;
   font-size: 0.8rem; /* Shrink the text size */
-  padding-left: 20px;
+  padding-left: 25px;
+  margin-bottom: 10px;
 }
 
 .profile-info p {
   margin: 0; /* Remove the default margin */
-  line-height: 1.4; /* Adjust the line-height to control vertical spacing */
+  line-height: 1.3; /* Adjust the line-height to control vertical spacing */
 }
 
 .profile-info a {
-  color: var(--color-text-primary);
+  color: lightgrey;
   text-decoration: none;
 }
 
+.profile-name {
+  font-size: 1.5rem;
+}
+
+.profile-title {
+  font-size: 0.9rem;
+  color: grey;
+}
+
 .profile-text {
-  flex: 1;
-  font-size: 15px; /* Use rem for font size */
-  text-align: left;
+  padding-top: 10px;
+}
+
+.profile-text h3 {
+  font-size: 0.9rem;
+}
+
+.profile-text-p {
+  font-size: 0.9rem;
+  color: rgb(159, 145, 145);
+  margin-top: -5px;
+  line-height: 1.3;
+}
+
+.links {
+  display: flex;
+  gap: 5px;
+  padding-top: 5px;
 }

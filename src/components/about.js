@@ -1,5 +1,7 @@
 import React from "react";
-import profileImage from "../assets/profile.jpg"; // Update the path to your image
+import { LinkedIn, GitHub } from "@mui/icons-material"; // Import MUI icons
+import profileImage from "../assets/profile-grey.png"; // Update the path to your image
+import "../styles/about.css"; // Import the specific CSS file
 
 function AboutMe() {
   return (
@@ -9,26 +11,33 @@ function AboutMe() {
           <img src={profileImage} alt="Profile" />
         </div>
         <div className="profile-info">
-          <p>Collins Gichohi</p>
-          <p>Software Engineer</p>
-          <p>
+          <p className="profile-name">Collins Gichohi</p>
+          <p className="profile-title">Software Engineer</p>
+          <p className="links">
             <a
               href="https://linkedin.com/in/collinsgichohi"
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              <LinkedIn fontSize="small" />
+            </a>
+            <a
+              href="https://github.com/gsnilloC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHub fontSize="small" />
             </a>
           </p>
         </div>
       </div>
       <div className="profile-text">
         <h3>About</h3>
-        <div>
-          Hi, I'm Collins, a software engineer and recent graduate from San
-          Francisco State University. I love solving problems through code and
-          building impactful projects. In a constant pursuit of improvement.
-        </div>
+        <p className="profile-text-p">
+          Hi! I'm Collins, a New Grad Software Engineer who’s always up for a
+          challenge. I love turning ideas into code and building projects that
+          make a difference. Always learning, always growing!
+        </p>
       </div>
     </section>
   );

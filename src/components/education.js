@@ -1,21 +1,32 @@
 import React from "react";
+import sfLogo from "../assets/sf-state.png";
+import "../styles/education.css"; // Import the specific CSS file
 
 function Education() {
   return (
-    <section id="education" className="section">
-      <h1>Education</h1>
-      <div>
-        <h2>San Francisco State University</h2>
-        <p>B.Sc. in Computer Science, Graduated Cum Laude – May 2024</p>
-        <ul>
-          <li>Member of the Association of Computing Machinery (ACM)</li>
-        </ul>
-      </div>
-      <div>
-        <h2>FreeCodeCamp</h2>
-        <p>Foundational C# with Microsoft – December 2023</p>
-      </div>
-    </section>
+    <div>
+      <section id="experience" className="education-section">
+        <div className="education-container">
+          <div className="experience-text">
+            <h2>Education</h2>
+          </div>
+          <div className="experience-details">
+            <div className="school-logo">
+              <img src={sfLogo} alt="School Logo" />
+            </div>
+            <div className="school">
+              <p>San Francisco State University</p>
+              <div className="school-time-period">
+                <p>Mar - Aug 2024</p>
+              </div>
+            </div>
+          </div>
+          <div className="degree">
+            <p>Bachelor of Science in Computer Science</p>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 

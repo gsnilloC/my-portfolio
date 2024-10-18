@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Arial", sans-serif; /* Use a sans-serif font */
+  font-family: "Inter", sans-serif; /* Use the Inter font */
   background-color: #000; /* Set the background color to black */
   color: #fff; /* Optional: Set text color to white for contrast */
   -webkit-font-smoothing: antialiased;

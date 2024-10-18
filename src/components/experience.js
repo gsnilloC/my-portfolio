@@ -1,5 +1,15 @@
 import React from "react";
-import companyLogo from "../assets/profile.jpg"; // Add the path to your company logo
+import omnidyaLogo from "../assets/omnidya_logo.jpg"; // Update the path to your image
+import {
+  FaReact,
+  FaNodeJs,
+  FaAws,
+  FaDocker,
+  FaJira,
+  FaJava,
+} from "react-icons/fa";
+import { SiMongodb /*SiSpringboot*/ } from "react-icons/si";
+import "../styles/experience.css"; // Import the specific CSS file
 
 function Experience() {
   return (
@@ -11,26 +21,43 @@ function Experience() {
           </div>
           <div className="experience-details">
             <div className="company-logo">
-              <img src={companyLogo} alt="Company Logo" />
+              <img src={omnidyaLogo} alt="Company Logo" />
             </div>
-            <div className="experience-details">
-              <div className="position">
-                <h2>Omnidya</h2>
-                <div className="job-title">
-                  <strong>Full-Stack Software Engineering Intern</strong>
-                </div>
-                <div className="job-description">
-                  <ul>
-                    <p>
-                      Collaborated in an Agile environment to design and develop
-                      an Insurance Rater. Developed RESTful APIs, optimized AWS
-                      Lambda functions, and managed CI/CD pipelines with Docker.
-                    </p>
-                  </ul>
-                </div>
-              </div>
+            <div className="job-title-description">
+              <strong>Software Engineer Intern - Omnidya</strong>
               <div className="time-period">
-                <p>March - August 2024</p>
+                <p>Mar - Aug 2024</p>
+              </div>
+            </div>
+          </div>
+          <div className="job-description">
+            <p>
+              Collaborated in an Agile environment to develop an Insurance Rater
+              for calculating driver premiums. I built RESTful APIs for seamless
+              data exchange, optimized AWS Lambda functions, designed test cases
+              with Selenium, and gained experience with MongoDB integration.
+            </p>
+            <div className="tech-logos">
+              <div className="tech-logo-container" data-name="React.js">
+                <FaReact size={30} />
+              </div>
+              <div className="tech-logo-container" data-name="Node.js">
+                <FaNodeJs size={30} />
+              </div>
+              <div className="tech-logo-container" data-name="AWS">
+                <FaAws size={30} />
+              </div>
+              <div className="tech-logo-container" data-name="Docker">
+                <FaDocker size={30} />
+              </div>
+              <div className="tech-logo-container" data-name="Jira">
+                <FaJira size={30} />
+              </div>
+              <div className="tech-logo-container" data-name="MongoDB">
+                <SiMongodb size={30} />
+              </div>
+              <div className="tech-logo-container" data-name="Java">
+                <FaJava size={30} /> {/* Use FaJava or another alternative */}
               </div>
             </div>
           </div>

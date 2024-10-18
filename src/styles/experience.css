@@ -1,11 +1,7 @@
-.company-logo {
-  flex: 0 0 auto; /* Prevent the logo from stretching */
-  margin-right: 20px; /* Add some space between the logo and the text */
-}
-
 .company-logo img {
-  width: 45px; /* Reduce the width */
-  height: 45px; /* Reduce the height */
+  width: 40px; /* Reduce the width */
+  height: 40px; /* Reduce the height */
+  margin-right: 20px; /* Add some space between the logo and the text */
 }
 
 .experience-section {
@@ -13,12 +9,136 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  padding-top: 25px;
+  padding-top: 10px;
+  width: 100%; /* Ensure it takes the full width */
+  margin: 0; /* Remove any default margin */
 }
 
 .experience-container {
   display: flex;
-  flex-direction: column; /* Change to row to align items side by side */
-  justify-content: space-between; /* Distribute space between items */
-  align-items: flex-start; /* Align items to the top */
+  flex-direction: column; /* Keeps the elements stacked */
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; /* Ensure it takes the full width */
+  padding: 0; /* Remove padding if necessary */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.job-title-description,
+.experience-details,
+.job-description {
+  width: 100%; /* Make sure child elements take full width */
+  flex-grow: 1; /* Allow the element to grow */
+  flex-shrink: 1; /* Allow the element to shrink */
+}
+
+.job-description p {
+  word-wrap: break-word; /* Ensure long text wraps */
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    width: 100%; /* Full width for smaller screens */
+    padding: 10px; /* Reduce padding for mobile */
+  }
+  .experience-details,
+  .job-title-description {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: flex-start; /* Align to the start */
+  }
+}
+
+.time-period {
+  margin-left: 80px; /* Add space between the job description and time period */
+  white-space: nowrap; /* Prevent the time period from wrapping */
+  font-size: 0.7rem;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column; /* Change to column for wrapping */
+  align-items: flex-start;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.job-title-description {
+  display: flex;
+  flex-direction: row; /* Ensure job title and time period are side by side */
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.job-description {
+  margin-top: 10px; /* Add space between the title and description */
+  font-size: 0.9rem;
+  color: rgb(164, 164, 164);
+}
+
+.experience-text h2 {
+  font-size: 0.9rem;
+}
+
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap; /* Allow the logos to wrap to the next line */
+  gap: 20px; /* Reduce the gap slightly for smaller screens */
+  margin-top: 10px;
+  justify-content: flex-start; /* Align logos to the left */
+}
+
+.tech-logo-container {
+  position: relative; /* Each logo container is relatively positioned */
+  display: inline-flex; /* Ensure logos are displayed inline */
+  justify-content: center; /* Center the logos within their containers */
+  align-items: center; /* Align icons vertically */
+  width: 50px; /* Set a fixed width for logos */
+  height: 50px; /* Set a fixed height for logos */
+}
+
+@media (max-width: 768px) {
+  .tech-logos {
+    justify-content: center; /* Center logos on smaller screens */
+    gap: 15px; /* Reduce spacing between logos for mobile */
+  }
+
+  .tech-logo-container {
+    width: 40px; /* Adjust logo size for smaller screens */
+    height: 40px;
+  }
+}
+
+.tech-logo-container svg {
+  transition: transform 0.3s;
+}
+
+.tech-logo-container:hover svg {
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+.tech-logo-container::after {
+  content: attr(data-name); /* Display the name of the technology */
+  position: absolute;
+  background-color: rgb(159, 145, 145);
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  white-space: nowrap;
+  bottom: -30px; /* Position the tooltip below the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Center the tooltip */
+  transition: opacity 0.3s;
+  pointer-events: none; /* Prevent the tooltip from blocking interactions */
+}
+
+.tech-logo-container:hover::after {
+  opacity: 0.5; /* Show the tooltip on hover */
+}
+
+@media (max-width: 768px) {
+  .experience-container,
+  .experience-details,
+  .job-title-description {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
 }

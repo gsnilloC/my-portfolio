@@ -1,95 +1,23 @@
 .content-container {
-  width: 50%;
+  width: 470px;
   margin: 0 auto; /* Centers the container */
-  padding-top: 75px;
+  padding-top: 55px;
 }
 
 @media (max-width: 768px) {
   .content-container {
-    width: 60%; /* Adjust width for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
   }
 }
 
 body {
-  font-size: 10px; /* Default font size */
+  font-size: 12px; /* Default font size */
 }
 
 @media (max-width: 768px) {
   body {
     font-size: 10px; /* Adjust font size for smaller screens */
   }
-}
-
-.profile-image img {
-  width: 90px; /* Use viewport width for image size */
-  height: 90px; /* Maintain aspect ratio */
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #ccc; /* Converted from 0.2vw */
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.profile-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Align items to the center */
-  width: 100%;
-  padding-left: 15px;
-  padding-top: 20px;
-}
-
-.profile-info {
-  flex: 1;
-  text-align: left;
-  font-size: 0.8rem; /* Shrink the text size */
-  padding-left: 20px;
-}
-
-.profile-info p {
-  margin: 0; /* Remove the default margin */
-  line-height: 1.4; /* Adjust the line-height to control vertical spacing */
-}
-
-.profile-info a {
-  color: var(--color-text-primary);
-  text-decoration: none;
-}
-
-.profile-text {
-  flex: 1;
-  font-size: 15px; /* Use rem for font size */
-  text-align: left;
-}
-
-.company-logo {
-  flex: 0 0 auto; /* Prevent the logo from stretching */
-  margin-right: 20px; /* Add some space between the logo and the text */
-}
-
-.company-logo img {
-  width: 45px; /* Reduce the width */
-  height: 45px; /* Reduce the height */
-}
-
-.experience-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  padding-top: 25px;
-}
-
-.experience-container {
-  display: flex;
-  flex-direction: column; /* Change to row to align items side by side */
-  justify-content: space-between; /* Distribute space between items */
-  align-items: flex-start; /* Align items to the top */
 }
 
 h1,
